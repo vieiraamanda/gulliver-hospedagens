@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hospedagens</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSA-CjkrFRSWCKtrBrHiylewPABN4Hduc&callback=initMap&v=weekly"
+        defer></script>
+</head>
+
+<body>
+    <header>
+        <section class="header-1">
+            <a href="#">
+                <img src="./images/logo.png" alt="Logotipo Gulliver Traveller" class="logo" />
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <nav class="nav-list nav-list-1">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Minhas Viagens</a>
+                    </li>
+                    <li>
+                        <a href="#" id="login-button">Fazer Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header-2">
+            <nav class="nav-list nav-list-2">
+                <ul>
+                    <li>
+                        <img src="./images/icone-destinos.png" alt="" class="icons">
+                        <a href="#">Destinos</a>
+                    </li>
+                    <li>
+                        <img src="./images/icone-hospedagens.png" alt="" class="icons">
+                        <a href="#" class="selected-nav">Hospedagens</a>
+                    </li>
+
+                    <li>
+                        <img src="./images/icone-pacotes.png" alt="" class="icons">
+                        <a href="#">Pacotes de Viagem</a>
+                    </li>
+
+                    <li>
+                        <img src="./images/icone-gastronomia.png" alt="" class="icons">
+                        <a href="#">Gastronomia</a>
+                    </li>
+
+                    <li>
+                        <img src="./images/icone-entretenimento.png" alt="" class="icons">
+                        <a href="#">Entretenimento</a>
+                    </li>
+
+                    <li>
+                        <img src="./images/icone-cultura.png" alt="" class="icons">
+                        <a href="#">Cultura</a>
+                    </li>
+
+                    <li>
+                        <img src="./images/icone-veiculos.png" alt="" class="icons">
+                        <a href="#">Locação de veículos</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <section class="hero">
+        <h1 class="hero-title">
+            <strong>Todas opções de hospedagem</strong> para você aproveitar
+        </h1>
+    </section>
+
+    <main class="content">
+        <div class="map-container">
+            <h2 class="map-title">Hospedagens em Arraial do Cabo</h2>
+            <div id="map"></div>
+        </div>
+        <section class="hotels-container">
+            <div class="hotel">
+                <img src="./images/hotel-1.png" alt="Imagem da piscina da pousada." class="hotel-image" />
+                <div class="hotel-text">
+                    <h2>Pousada da Prainha</h2>
+                    <p>
+                        Situada a apenas 150 metros das águas azuis da Prainha, esta pousada dispõe de piscina ao ar
+                        livre, sauna e restaurante
+                        no local. <br> Há WiFi e estacionamento gratuitos na propriedade.
+                    </p>
+                    <img src="./images/5estrelas.png" alt="" class="evaluation" />
+                </div>
+            </div>
+
+            <div class="hotel">
+                <img src="./images/hotel-2.png" alt="Imagem da área de lazer da pousada." class="hotel-image" />
+                <div class="hotel-text">
+                    <h2>Pousada Thetis</h2>
+                    <p>
+                        Localizado em frente à Prainha em Arraial do Cabo, o Thetis Hotel Pousada dispõe de piscina ao
+                        ar livre, sauna e
+                        churrasqueira. O WiFi é gratuito. <br> Todos os quartos dispõem de TV, frigobar e banheiro
+                        privativo.
+                    </p>
+                    <img src="./images/5estrelas.png" alt="" class="evaluation" />
+                </div>
+            </div>
+
+            <div class="hotel">
+                <img src="./images/hotel-3.png" alt="Imagem da piscina da pousada com vegetação ao lado." class="hotel-image" />
+                <div class="hotel-text">
+                    <h2>Arraial CasaMar</h2>
+                    <p>
+                        Pousada com ambiente tranquilo e acolhedor. A área social possui piscina, estacionamento e
+                        cozinha
+                        livre para utilização dos hóspedes. <br> Todos as suítes possuem ar condicionado e TV.
+                    </p>
+                    <img src="./images/4.5estrelas.png" alt="" class="evaluation" />
+                </div>
+            </div>
+
+            <div class="hotel">
+                <img src="./images/hotel-4.png" alt="Imagem da piscina da pousada." class="hotel-image" />
+                <div class="hotel-text">
+                    <h2>Pousada Princesa</h2>
+                    <p>
+                        Situada a 150 metros da Praia da Prainha, a pousada oferece uma piscina ao ar livre, os quartos
+                        são equipados com guarda-roupa e TV de tela plana. Um buffet de café da manhã é servido
+                        diariamente.
+                    </p>
+                    <img src="./images/4.5estrelas.png" alt="" class="evaluation" />
+                </div>
+            </div>
+
+            <div class="hotel">
+                <img src="./images/hotel-5.png" alt="Imagem da varanda com vista para o mar." class="hotel-image" />
+                <div class="hotel-text">
+                    <h2>Condomínio Beach Town</h2>
+                    <p>
+                        Com piscina ao ar livre e vista do mar, este apartamento inclui 2 quartos, sala de estar, TV de
+                        tela plana, cozinha equipada com área para refeições e 2 banheiros com banheira de
+                        hidromassagem.
+                    </p>
+                    <img src="./images/4estrelas.png" alt="" class="evaluation" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
